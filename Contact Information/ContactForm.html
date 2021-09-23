@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="ContactForm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+    <script src="ContactForm.js"></script>
+</head>
+
+<body>
+    <form id="form">
+        <!-- Page Title -->
+        <div id="BackgroundDisable" class="ui-widget-overlay" style="display: none; z-index: 1001;"></div>
+        <div class="card-title">
+            <h3 id="Header" class="container">Contact Form - Genera Development</h3>
+        </div>
+
+        <!-- Page Content -->
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-7">
+                        <div class="card">
+                            <div class="card-header One">
+                                <div class="dot">1</div>
+                                Personal Details
+                                <p class="form-text">Subtitle or short description can be set here.</p>
+                            </div>
+                            <span id="NameIcon" class="fa fa-user"></span>
+                            <label for="InputFullName"></label><input type="text" class="form-control" id="InputFullName" minlength="1" placeholder="Enter Full Name" required>
+                            <label for="InputEmail"></label><input type="email" class="form-control" id="InputEmail" placeholder="Enter VALID EMAIL and check the result" required>
+                            <label for="InputPhone"></label><input type="text" class="form-control" id="InputPhone" placeholder="Enter Phone e.g.: +363012345" required>
+                        </div>
+                        <div class="card">
+                            <div class="card-header One">
+                                <div class="dot">2</div>
+                                Subject
+                                <p class="form-text">Subtitle or short description can be set here.</p>
+                            </div>
+                            <label for="Subject"></label><select class="form-select" id="Subject">
+                            <option>General Information</option>
+                        </select>
+                        </div>
+                        <div class="card">
+                            <div class="card-header One">
+                                <div class="dot">3</div>
+                                Message
+                                <p class="form-text">Subtitle or short description can be set here.</p>
+                            </div>
+                            <label for="InputMessage"></label><textarea class="form-control" id="InputMessage" placeholder="Enter Message" rows="7" required></textarea>
+                        </div>
+                        <div class="card">
+                            <div class="card-header One">
+                                <div class="dot">4</div>
+                                Submission
+                                <p class="form-text">Please accept the terms and conditions below.</p>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="TermsAndConditions" required>
+                                <label class="form-check-label " for="TermsAndConditions">Accept </label><p id="Terms">&nbsp; Terms and Conditions.</p>
+                            </div>
+                        </div>
+
+                        <div id="TermsDialog">
+                            <label for="TheTerms"></label><textarea id="TheTerms" class="TextArea" rows="5" placeholder="Terms and conditions are written here."></textarea>
+                        </div>
+                        <div id="SubmitDialog">
+                            <label for="TheSubmit"></label><textarea id="TheSubmit" class="TextArea" rows="5" placeholder="Your submit was successful." readonly></textarea>
+                        </div>
+
+                        <div class="card">
+                            <p id="Error">All the required fields must be filled</p>
+                            <button id="Btn" type="submit"><span class="Test">Submit</span>
+                                <i class="fa fa-paper-plane Test"></i>
+                                <span class="separator"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="card c2">
+                            <div class="card-header Two"><img src="Pictures/Pin.png" alt="No Image Found"><br> Address</div>
+                            <p class="form-text" style="text-align: center">123 Street Name, City Name, USA</p>
+                        </div>
+                        <div class="card c2">
+                            <div class="card-header Two"><img src="Pictures/Letter.png" alt="No Image Found"><br> Email</div>
+                            <p class="form-text" style="text-align: center">info@yourdomain.com</p>
+                        </div>
+                        <div class="card c2">
+                            <div class="card-header Two"><img src="Pictures/Phone.png" alt="No Image Found"><br> Telephone</div>
+                            <p class="form-text" style="text-align: center">+3630123456789</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="footer"></div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

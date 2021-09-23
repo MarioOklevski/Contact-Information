@@ -1,0 +1,219 @@
+/* ---------------- Custom Fonts ---------------- */
+@font-face {
+    font-family: Poppins; src: url("Font/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: PoppinsMedium; src: url("Font/Poppins-Medium.ttf");
+}
+@font-face {
+    font-family: PoppinsLight; src: url("Font/Poppins-Light.ttf");
+}
+@font-face {
+    font-family: PoppinsExtraLight; src: url("Font/Poppins-ExtraLight.ttf");
+}
+@font-face {
+    font-family: PoppinsExtraLightItalic; src: url("Font/Poppins-ExtraLightItalic.ttf");
+}
+
+/* ---------------- Breakpoints ----------------*/
+[class*="col-"] {
+    width: 100%;
+}
+.Test{
+    display: inline-block;
+}
+#NameIcon{
+    position: absolute;
+    z-index: 1;
+    top: 10.5rem;
+    left: 86%;
+    color: grey;
+}
+.c2{
+    margin-top: 6%;
+}
+.dot{
+    text-align: center;
+    padding-top: 2%;
+    padding-left: 0.1%;
+    height: 2.2rem;
+    width: 2.2rem;
+    background-color: #00C2A9;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 1%;
+}
+h3{
+    font-size: medium;
+}
+#Header{
+    padding-top: 3%;
+    margin-bottom: 2%;
+}
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .Test{margin-top: 1.3%;}
+    #NameIcon{
+        position: absolute;
+        z-index: 1;
+        top: 9.5rem;
+        left: 86%;
+        color: gray;
+    }
+    .c2{
+        margin-top: 6%;
+    }
+    .dot{padding-top: 1.5%;}
+    h3{font-size: larger}
+    #Header{
+        padding-top: 2%;
+        margin-bottom: 1%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .Test{margin-top: 2.2%;}
+    #NameIcon{
+        position: absolute;
+        z-index: 1;
+        top: 10rem;
+        left: 90%;
+        color: gray;
+    }
+    .c2{
+        margin-top: 0;
+        margin-bottom: 6%;
+    }
+    .dot{padding-top: 1%;}
+    h3{font-size: x-large}
+    #Header{
+        padding-top: 1%;
+        margin-bottom: 0.5%;
+    }
+}
+
+/* ---------------- Custom CSS ---------------- */
+*{
+    box-sizing: border-box;
+}
+.container{
+    font-family: Poppins, sans-serif;
+    margin-bottom: 2%;
+    padding-left: 8%;
+    padding-right: 4%;
+}
+.card-title{
+    background-color: #00C2A9;
+    color: white;
+    padding-bottom: 0.5%;
+    font-family: PoppinsMedium, sans-serif;
+}
+input{
+    margin-top: 3%;
+}
+input::placeholder{
+    font-family: PoppinsExtraLightItalic, FontAwesome, sans-serif;
+}
+textarea::placeholder{
+    font-family: PoppinsExtraLightItalic, sans-serif;
+}
+.col-sm-5{
+    margin-bottom: 2%;
+}
+#Subject{
+
+}
+.One{
+    border-bottom: 0.1rem dotted #DDDDDD;
+}
+.Two{
+    border: none;
+    text-align: center;
+}
+.c2{
+    width: 80%;
+    margin-bottom: 6%;
+}
+img{
+    height: 15%;
+    width: 25%;
+}
+.card{
+    padding: 1.875rem;
+}
+#InputMessage{
+    margin-top: 3%;
+    resize: none;
+}
+.TextArea{
+    resize: none;
+    height: 100%;
+    width: 100%;
+}
+.form-check{
+    margin-top: 4%;
+}
+#TermsAndConditions{
+    border-color: #00C2A9;
+    border-radius: 0;
+}
+#Terms{
+    color: #00C2A9;
+    display: inline-block;
+}
+#footer{
+    border-top: #DDDDDD 0.1rem solid;
+    margin-bottom: 3%;
+}
+#Error{
+    color: red;
+    display: none;
+}
+#Btn{
+    font-size: medium;
+    text-align: left;
+    color: white;
+    background-color: #00C2A9;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 1% 4% 1% 6%;
+}
+.fa-paper-plane{
+     padding-top: 0.25rem;
+     color: white;
+     float: right;
+ }
+.separator{
+    content: '';
+    display: inline-block;
+    background: white;
+    height: 80%;
+    width: 1px;
+    vertical-align: top;
+    float: right;
+    margin-right: 3.5%;
+    padding: 4.5% 0 4% 0;
+}
